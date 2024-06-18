@@ -1,0 +1,25 @@
+#competitiveProgramming{
+    padding-top: 100px;
+}
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping if there are too many items to fit in one row */
+  }
+  
+  .centered-item {
+    text-align: center;
+    margin: 20px 50px;
+  }
+  
+  .top-text {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .bottom-text {
+    font-size: 1em;
+    color: rgb(168, 168, 168);
+  }
+  

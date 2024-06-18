@@ -1,0 +1,13 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto; /* Center align and adjust margin as needed */
+}
+
+#projects{
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+}

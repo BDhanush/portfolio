@@ -1,0 +1,60 @@
+#about {
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.intro {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  text-align: center; /* Center align content within #about */
+  min-height: 100vh;
+  
+}
+
+.container {
+  max-width: 800px; /* Adjust as per your design */
+  display: flex;
+  flex-direction: column; /* Stacks header and content vertically */
+  align-items: center; /* Center align items */
+  padding-top: 30vh;
+  margin-bottom: 10%;
+
+  
+}
+
+.container1 {
+  max-width: 800px; /* Adjust as per your design */
+  display: flex;
+  align-items: center; /* Center align items */
+  
+}
+
+.content {
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  flex-direction: row; /* Stacks header and content vertically */
+  align-items: center; /* Centers the items vertically */
+
+
+}
+
+.text-wrapper {
+  flex: 1; /* Takes up remaining space */
+  text-align: left; /* Adjust as needed */
+  padding-right: 20px ;
+}
+
+.image-socials-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 200px; /* Adjust according to your design */
+  height: 200px;
+  border-radius: 50%;
+  object-fit:cover;
+}

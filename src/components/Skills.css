@@ -1,0 +1,18 @@
+#skills {
+  }
+
+  .chip {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4f7564;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px; /* Adjust the value as necessary */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.chip:hover {
+    background-color: #466959;
+}
