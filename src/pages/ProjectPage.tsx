@@ -15,7 +15,7 @@ const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, gith
   const descriptionList = description.split('.').map((item) =>
     item+='.'
   )
-
+  images
   return (
     <div id='projectPage'>
     <h2>{title}</h2>

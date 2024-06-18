@@ -1,4 +1,3 @@
-import { MdDescription } from 'react-icons/md'
 import logo from '../assets/react.svg'
 
 export function getLink(title:string):string {

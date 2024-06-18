@@ -1,4 +1,3 @@
-import React from 'react'
 import './CP.css'
 import { cpItems } from '../data/cpLinksData'
 

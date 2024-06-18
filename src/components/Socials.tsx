@@ -1,5 +1,4 @@
 // SocialLinks.js
-import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
 import { email, githubLink, instagramLink, linkedinLink } from '../data/SocialsData';
 

@@ -1,4 +1,3 @@
-import { MdDescription } from "react-icons/md";
 
 // last sentence in description should not end with a '.'
 export const experienceItems = [

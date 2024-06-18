@@ -1,4 +1,3 @@
-import React from 'react'
 import './Achievements.css'
 import CP from './CP'
 import { achievementItems, images } from '../data/AchivementsData'

@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
     const scrollY = window.scrollY;
     const navItems = document.querySelectorAll('.nav-item');
 
-    let currentActive = null;
+    let currentActive = 0;
 
     navItems.forEach((item, index) => {
       const sectionId = item.getAttribute('href')?.substring(1);
