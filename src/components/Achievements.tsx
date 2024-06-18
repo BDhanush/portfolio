@@ -1,17 +1,19 @@
 import React from 'react'
 import './Achievements.css'
 import CP from './CP'
-import { achievementItems } from '../data/AchivementsData'
+import { achievementItems, images } from '../data/AchivementsData'
+import Gallery from './Gallery'
 
 function Achievements () {
   return (
     <div id='achievements'>
       <h2>Achievements</h2>
-      <ul style={{margin:'auto 50px'}}>
+      <ul style={{margin:'auto 50px', paddingBottom:"20px"}}>
       {achievementItems.map((item,index) => 
         item.link? <a href={item.link} target="_blank" rel="noopener noreferrer"><li key={index}>{item.text}</li></a> : <li key={index}>{item.text}</li>
       )}
       </ul>
+      <Gallery images={images} />
       <CP/>
     </div>
   )

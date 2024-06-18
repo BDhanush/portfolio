@@ -13,7 +13,7 @@
 }
 
 .container {
-  max-width: 800px; /* Adjust as per your design */
+  /* max-width: 800px;  */
   display: flex;
   flex-direction: column; /* Stacks header and content vertically */
   align-items: center; /* Center align items */
@@ -24,7 +24,7 @@
 }
 
 .container1 {
-  max-width: 800px; /* Adjust as per your design */
+  /* max-width: 800px;  */
   display: flex;
   align-items: center; /* Center align items */
   
@@ -53,8 +53,8 @@
 }
 
 .profile-image {
-  width: 200px; /* Adjust according to your design */
-  height: 200px;
+  width: 250px; /* Adjust according to your design */
+  height: 250px;
   border-radius: 50%;
   object-fit:cover;
 }

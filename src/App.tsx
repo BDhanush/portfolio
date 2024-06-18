@@ -38,6 +38,8 @@ function App() {
                 title={item.title}
                 description={item.description}
                 images={item.images}
+                githubLink={item.githubLink}
+
               />} />
             ))}
         </Routes>
