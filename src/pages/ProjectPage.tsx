@@ -12,7 +12,7 @@ interface Props {
   description: string;
   images: string[];
   githubLink:string;
-  otherLinks:OtherLinks[];
+  otherLinks:OtherLinks[] | undefined;
   
 }
 
