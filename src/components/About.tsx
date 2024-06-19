@@ -1,4 +1,3 @@
-import React from 'react'
 import './About.css'
 import ProfilePicture from "../assets/ProfilePicture.jpg";
 import Skills from './Skills';
