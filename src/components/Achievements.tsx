@@ -1,6 +1,6 @@
 import './Achievements.css'
 import CP from './CP'
-import { achievementItems, images } from '../data/AchivementsData'
+import { achievementItems, images } from '../data/AchievementsData'
 import Gallery from './Gallery'
 
 function Achievements () {
