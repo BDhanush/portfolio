@@ -4,12 +4,12 @@ import About from './components/About.tsx';
 import Experience from './components/Experience.tsx';
 import Projects from './components/Projects.tsx';
 import Achievements from './components/Achievements.tsx';
-import Socials from './components/Socials.tsx';
 import ProjectPage from './pages/ProjectPage.tsx';
 import ProgressBar from "react-scroll-progress-bar";
 import './index.css';
 import { projectItems } from './data/ProjectData.ts';
 import { getLink } from './data/ProjectData.ts';
+import Footer from './components/Footer.tsx';
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
               <Experience/>
               <Achievements/>
               <Projects/>
-              <Socials/>
+              <Footer/>
 
             </>
           }/>
