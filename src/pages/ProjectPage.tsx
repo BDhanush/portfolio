@@ -13,7 +13,6 @@ interface Props {
   images: string[];
   githubLink:string;
   otherLinks:OtherLinks[] | undefined;
-  
 }
 
 const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, githubLink, otherLinks }) => {
