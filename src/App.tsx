@@ -38,6 +38,7 @@ function App() {
                 description={item.description}
                 images={item.images}
                 githubLink={item.githubLink}
+                otherLinks={item.otherLinks}
 
               />} />
             ))}

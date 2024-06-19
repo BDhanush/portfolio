@@ -1,16 +1,22 @@
 import React from 'react';
 import './ProjectPage.css'; // For styling
 
+interface OtherLinks{
+  title:string;
+  link:string;
+}
+
 interface Props {
   ytLink: string;
   title: string;
   description: string;
   images: string[];
   githubLink:string;
+  otherLinks:OtherLinks[];
   
 }
 
-const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, githubLink }) => {
+const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, githubLink, otherLinks }) => {
 
   const descriptionList = description.split('.').map((item) =>
     item+='.'
@@ -46,6 +52,18 @@ const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, gith
         />
         <span className="button-text">Source Code</span>
         </a>
+      }
+      {otherLinks &&
+        <div>
+        <h3>Other Links</h3>
+        {otherLinks.map((item,index) =>
+        <div style={{padding:'10px 0px'}}>
+        <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>
+        {item.title}
+        </a>
+        </div>
+        )}
+        </div>
       }
       </div>
   );
