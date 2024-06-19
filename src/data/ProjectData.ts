@@ -70,7 +70,7 @@ export const projectItems=[
     
     },
 
-    { imageSrc: streaksThumbnail, title: 'Streaks', summary: 'Maintain track of habits' , ytLink:'https://www.youtube.com/embed/Zf4k_rKN3Pw', 
+    { imageSrc: streaksThumbnail, title: 'Streaks', summary: 'Maintain track of habits' , ytLink:'https://www.youtube.com/embed/78uXWx5niR0', 
     description: "Add, delete and reset streaks.An Android app to help track habits.Built in Kotlin along with Room database to store streaks",
     images: ["",],
     githubLink:"https://github.com/BDhanush/Streaks/",
