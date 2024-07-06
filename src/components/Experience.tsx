@@ -68,7 +68,7 @@ export default function Experience() {
       (
         <div>
 
-        {experienceItems.map((item) => (
+        {experienceItems.map((item,index) => (
             
 
                 <div style={{paddingBottom:'30px'}}>
