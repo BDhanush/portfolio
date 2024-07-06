@@ -71,26 +71,26 @@ export default function Experience() {
         {experienceItems.map((item,index) => (
             
 
-                <div style={{paddingBottom:'30px'}}>
-                  <a href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  key={index}
-                  >
-                  <p>{item.time}</p>
-                  <h3>
-                    {item.company}
-                  </h3>
-                  <h4>
-                    {item.role}
-                  </h4>
-                  </a>
-                  <ul>
-                    {item.description.split('.').map((item,index) =>
-                    <li key={index}>{item+'.'}</li>
-                  )}
-                </ul>
-                </div>
+              <div style={{paddingBottom:'30px'}}>
+                <a href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                >
+                <p>{item.time}</p>
+                <h3>
+                  {item.company}
+                </h3>
+                <h4>
+                  {item.role}
+                </h4>
+                </a>
+                <ul>
+                  {item.description.split('.').map((item,index) =>
+                  <li key={index}>{item+'.'}</li>
+                )}
+              </ul>
+              </div>
 
       ))}
         
