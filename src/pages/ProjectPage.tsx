@@ -34,7 +34,7 @@ const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, gith
         marginRight: 'auto'}}>
         <iframe
           width={Math.min(0.8*width,560)}
-          height={Math.min(0.8*width,560)*9/16.0}
+          height={Math.min(0.8*width,560)*9.0/16}
           src={ytLink}
           title="YouTube video player"
           frameBorder="0"
