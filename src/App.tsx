@@ -10,6 +10,7 @@ import './index.css';
 import { projectItems } from './data/ProjectData.ts';
 import { getLink } from './data/ProjectData.ts';
 import Footer from './components/Footer.tsx';
+import NotFound from './pages/NotFound.tsx';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
 
               />} />
             ))}
+            <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
