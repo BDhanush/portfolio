@@ -25,7 +25,7 @@ export default function Experience() {
         >
         {experienceItems.map((item, index) => (
             <TimelineItem>
-                <TimelineOppositeContent color="aliceblue" className='timelineLeftContent'>
+                <TimelineOppositeContent color="aliceblue" style={{minWidth: '175px'}}>
                 {item.time}
                 </TimelineOppositeContent>
                 
