@@ -1,39 +1,110 @@
-/* NavBar.css */
-
 .navbar {
-    position: fixed;
-    display: flex;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    align-items: center;
-    justify-content: space-around;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50px;
-    padding: 10px 5px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    width: fit-content;
-    margin: 10px auto;
-    z-index: 9999;
-  }
-  
-  .nav-item {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 10px 5px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: fit-content;
+  margin: 10px auto;
+  z-index: 9999;
+  display: flex;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-item.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    left: 0;
+    transform: none;
     padding: 10px 20px;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-    /* font-weight: bold; */
-    position: relative;
-    z-index: 1;
+    border-radius: 0px;
+    padding: 10px 5px;
+    margin: 0px auto;
+    background: rgba(0, 0, 0);
+    
+    
   }
-  
-  .nav-item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+
+  .hamburger-menu {
+    display: flex;
+    
+    
   }
-  
-  .nav-item.active {
-    background-color: rgba(255, 255, 255, 0.4);
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 20px;
+    
+    
   }
-  
+
+  .nav-items.open {
+    display: flex;
+    background: rgba(0, 0, 0);
+    
+    
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}

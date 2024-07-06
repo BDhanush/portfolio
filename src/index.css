@@ -3,56 +3,82 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
-  }
-  body {
-    background: linear-gradient(-45deg, #364e44, #273038, #273832, #273831);
-    background-size: 1000% 1000%;
-    animation: gradient 10s ease infinite;
-    height: 100vh;
-    background-attachment:fixed;
-    color: aliceblue;
+  scroll-behavior: smooth;
+}
 
-  }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  h1{
-    font-size:50px;
-    font-weight:bolder;
-    font-family: "Playwrite NL";
-    color: #9edac2;
-    padding-bottom: 20px;
-  }
+body {
+  background: linear-gradient(-45deg, #364e44, #273038, #273832, #273831);
+  background-size: 1000% 1000%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+  background-attachment: fixed;
+  color: aliceblue;
+}
 
-  h2{
-    font-size:xx-large;
-    font-weight: bold;
-    color: #9edac2;
-    padding-bottom: 20px;
-
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-
-  h3{
-    font-size:xx-large;
-    color: #65b5ff;
+  50% {
+    background-position: 100% 50%;
   }
-
-  h4{
-    font-size:large;
-    color: #9edac2;
+  100% {
+    background-position: 0% 50%;
   }
-  
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: "Playwrite NL";
+  color: #9edac2;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #9edac2;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: xx-large;
+  color: #65b5ff;
+}
+
+h4 {
+  font-size: large;
+  color: #9edac2;
+}
+
 li {
   list-style-type: circle;
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: x-large;
+  }
+
+  h3 {
+    font-size: large;
+  }
+
+  h4 {
+    font-size: medium;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  
 }

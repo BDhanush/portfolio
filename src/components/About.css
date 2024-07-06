@@ -1,7 +1,6 @@
 #about {
   padding-left: 10%;
   padding-right: 10%;
-
 }
 
 .intro {
@@ -9,40 +8,28 @@
   justify-content: center; /* Center horizontally */
   text-align: center; /* Center align content within #about */
   min-height: 100vh;
-  
 }
 
 .container {
-  /* max-width: 800px;  */
+  /* max-width: 800px; */
   display: flex;
   flex-direction: column; /* Stacks header and content vertically */
   align-items: center; /* Center align items */
   padding-top: 30vh;
   margin-bottom: 10%;
-
-  
-}
-
-.container1 {
-  /* max-width: 800px;  */
-  display: flex;
-  align-items: center; /* Center align items */
-  
 }
 
 .content {
   display: flex;
   justify-content: center; /* Centers the items horizontally */
-  flex-direction: row; /* Stacks header and content vertically */
+  flex-direction: row; /* Arrange items horizontally by default */
   align-items: center; /* Centers the items vertically */
-
-
 }
 
 .text-wrapper {
   flex: 1; /* Takes up remaining space */
   text-align: left; /* Adjust as needed */
-  padding-right: 20px ;
+  padding-right: 20px;
 }
 
 .image-socials-wrapper {
@@ -56,5 +43,36 @@
   width: 250px; /* Adjust according to your design */
   height: 250px;
   border-radius: 50%;
-  object-fit:cover;
+  object-fit: cover;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+
+  .container {
+    padding-top: 15vh;
+  }
+  
+  .content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .text-wrapper {
+    text-align: center; /* Center text on smaller screens */
+    padding-right: 0px;
+    padding-bottom: 20px; /* Add bottom padding for separation */
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
 }

@@ -1,10 +1,9 @@
-// Navbar.tsx
-
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const NavBar: React.FC = () => {
-  const [activeItem, setActiveItem] = useState<number | null>(null); // Track active nav item
+  const [activeItem, setActiveItem] = useState<number | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -17,10 +16,9 @@ const NavBar: React.FC = () => {
       const section = document.getElementById(sectionId || '');
 
       if (section) {
-        const sectionTop = section.offsetTop-1;
+        const sectionTop = section.offsetTop - 1;
         const sectionHeight = section.offsetHeight;
 
-        // Check if the section is in view
         if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
           currentActive = index;
         }
@@ -32,26 +30,37 @@ const NavBar: React.FC = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Call initially to set active item on load
+    handleScroll();
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
+  const navItems = ['About', 'Experience', 'Achievements', 'Projects'];
 
-  const navItems = ['About', 'Experience','Achievements', 'Projects' ];
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <div className="navbar">
-      {navItems.map((item, index) => (
-        <a
-          key={item}
-          href={`#${item.toLowerCase()}`}
-          className={`nav-item ${activeItem === index ? 'active' : ''}`}
-        >
-          {item}
-        </a>
-      ))}
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <div className={`nav-items ${isMenuOpen ? 'open' : ''}`}>
+        {navItems.map((item, index) => (
+          <a
+            key={item}
+            href={`#${item.toLowerCase()}`}
+            className={`nav-item ${activeItem === index ? 'active' : ''}`}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {item}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
