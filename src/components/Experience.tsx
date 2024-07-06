@@ -9,11 +9,16 @@ import TimelineOppositeContent, {
 } from '@mui/lab/TimelineOppositeContent';
 import './Experience.css'
 import { experienceItems } from '../data/ExperienceData';
+import { useEffect, useState } from 'react';
 
 export default function Experience() {
+  const { width } = useWindowSize();
+  
   return (
     <div id='experience'>
-            <h2>Experience</h2>
+        <h2>Experience</h2>
+        {width >= 600 ? 
+        (
         <Timeline className='timeline'
         sx={{
             [`& .${timelineOppositeContentClasses.root}`]: {
@@ -25,7 +30,7 @@ export default function Experience() {
         >
         {experienceItems.map((item, index) => (
             <TimelineItem>
-                <TimelineOppositeContent color="aliceblue" style={{minWidth: '175px'}}>
+                <TimelineOppositeContent color="aliceblue" >
                 {item.time}
                 </TimelineOppositeContent>
                 
@@ -59,6 +64,60 @@ export default function Experience() {
       ))}
         
         </Timeline>
+      ):
+      (
+        <div>
+
+        {experienceItems.map((item, index) => (
+            
+
+                <div style={{paddingBottom:'30px'}}>
+                  <a href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  <p>{item.time}</p>
+                  <h3>
+                    {item.company}
+                  </h3>
+                  <h4>
+                    {item.role}
+                  </h4>
+                  </a>
+                  <ul>
+                    {item.description.split('.').map((item,index) =>
+                    <li key={index}>{item+'.'}</li>
+                  )}
+                </ul>
+                </div>
+
+      ))}
+        
+        </div>
+      )
+        }
     </div>
   );
 }
+
+function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowSize;
+}
+
