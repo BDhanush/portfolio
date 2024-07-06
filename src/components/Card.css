@@ -66,3 +66,9 @@
     padding: 20px; /* Adjust padding */
   }
   
+  @media (max-width: 360px) {
+    .card{
+      width: 240px; /* Adjust width as needed */
+      height: 240px; /* Adjust height as needed */
+    }
+  }
