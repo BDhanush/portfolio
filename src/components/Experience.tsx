@@ -18,12 +18,14 @@ export default function Experience() {
         sx={{
             [`& .${timelineOppositeContentClasses.root}`]: {
             flex: 0.2,
+            marginLeft:0,
+            paddingLeft:0
             },
         }}
         >
         {experienceItems.map((item, index) => (
             <TimelineItem>
-                <TimelineOppositeContent color="aliceblue">
+                <TimelineOppositeContent color="aliceblue" style={{minWidth: '175px'}}>
                 {item.time}
                 </TimelineOppositeContent>
                 

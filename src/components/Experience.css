@@ -5,5 +5,10 @@
   }
 
 .timeline {
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
   }
+
+.timelineLeftContent{
+  min-width: '175px',
+}

@@ -57,7 +57,8 @@ li {
 }
 
 ul{
-  margin: auto 50px;
+  margin-left: 40px;
+
 }
 
 @media (max-width: 600px) {
@@ -65,18 +66,18 @@ ul{
     font-size: 35px;
   }
   h2 {
-    font-size: x-large;
+    font-size: xx-large;
   }
 
   h3 {
-    font-size: large;
+    font-size: x-large;
   }
 
   h4 {
-    font-size: medium;
+    font-size: large;
   }
   ul{
-    margin: auto 15px;
+    margin-left: 15px;
   }
   
 }
