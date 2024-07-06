@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProjectPage.css'; // For styling
+import { useWindowSize } from '../useWindowSize';
 
 interface OtherLinks{
   title:string;
@@ -21,13 +22,19 @@ const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, gith
     item+='.'
   )
   images
+
+  const { width } = useWindowSize();
   return (
     <div id='projectPage'>
     <h2>{title}</h2>
-    {ytLink && <div className="video-container">
+    {ytLink && 
+      <div style={{
+        maxWidth: 'fit-content',
+        marginLeft: 'auto',
+        marginRight: 'auto'}}>
         <iframe
-          width="560"
-          height="315"
+          width={Math.min(0.8*width,560)}
+          height={Math.min(0.8*width,560)*9/16.0}
           src={ytLink}
           title="YouTube video player"
           frameBorder="0"

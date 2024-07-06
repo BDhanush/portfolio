@@ -9,7 +9,7 @@ import TimelineOppositeContent, {
 } from '@mui/lab/TimelineOppositeContent';
 import './Experience.css'
 import { experienceItems } from '../data/ExperienceData';
-import { useEffect, useState } from 'react';
+import { useWindowSize } from '../useWindowSize';
 
 export default function Experience() {
   const { width } = useWindowSize();
@@ -100,25 +100,3 @@ export default function Experience() {
     </div>
   );
 }
-
-function useWindowSize() {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  return windowSize;
-}
-
