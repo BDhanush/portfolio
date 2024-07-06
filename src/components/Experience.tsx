@@ -75,6 +75,7 @@ export default function Experience() {
                   <a href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  key={index}
                   >
                   <p>{item.time}</p>
                   <h3>
