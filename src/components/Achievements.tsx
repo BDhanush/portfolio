@@ -7,7 +7,7 @@ function Achievements () {
   return (
     <div id='achievements'>
       <h2>Achievements</h2>
-      <ul style={{margin:'auto 50px', paddingBottom:"20px"}}>
+      <ul style={{paddingBottom:"20px"}}>
       {achievementItems.map((item,index) => 
         item.link? <a href={item.link} target="_blank" rel="noopener noreferrer"><li key={index}>{item.text}</li></a> : <li key={index}>{item.text}</li>
       )}

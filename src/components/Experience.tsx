@@ -46,7 +46,7 @@ export default function Experience() {
                     {item.role}
                   </h4>
                   </a>
-                  <ul style={{margin:'auto 50px'}}>
+                  <ul>
                     {item.description.split('.').map((item,index) =>
                     <li key={index}>{item+'.'}</li>
                   )}
