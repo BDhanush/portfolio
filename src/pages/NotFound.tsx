@@ -1,20 +1,19 @@
 function NotFound() {
-    return (
-      <div
-        style={{
-          display: 'grid',
-          placeItems: 'center',
-          height: '100vh',
-          textAlign: 'center',
-        }}
-      >
-        <div>
-          <h2>Error 404</h2>
-          <h2>Page not found</h2>
-        </div>
+  return (
+    <div
+      style={{
+        display: 'grid',
+        placeItems: 'center',
+        height: '100vh',
+        textAlign: 'center',
+      }}
+    >
+      <div>
+        <h2>Error 404</h2>
+        <h2>Page not found</h2>
       </div>
-    );
-  }
-  
-  export default NotFound;
-  
+    </div>
+  );
+}
+
+export default NotFound;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProjectPage.css'; // For styling
 import { useWindowSize } from '../useWindowSize';
+import { FaGithub } from 'react-icons/fa';
 
 interface OtherLinks{
   title:string;
@@ -51,11 +52,7 @@ const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, gith
       </div>
       {githubLink &&
         <a href={githubLink} target="_blank" rel="noopener noreferrer" className="github-button">
-        <img 
-          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
-          alt="GitHub logo" 
-          className="github-logo" 
-        />
+        <FaGithub style={{fontSize:'24px',marginRight: '10px',}}/>
         <span className="button-text">Source Code</span>
         </a>
       }
