@@ -47,6 +47,15 @@ export const projectItems=[
     ],
     },
 
+    { imageSrc: parkThumbanil, title: 'Park', summary: 'Automatically save parking location when phone disconnects from Android Auto' , ytLink:'', 
+        description: "Automatically save parking space location when phone disconnects from Android Auto or Android Automative OS.Manually save parking location for users not using Android Auto.Parking space notes.Needs notification and precise location permissions.App does not require internet access.Built in Kotlin using CarConnection api, location services and Room database",
+        images: ["",],
+        githubLink:"https://github.com/BDhanush/Park/",
+        otherLinks:[
+            {title:'apk link',link:'https://1drv.ms/f/s!AmvH0VCG4AMoh6RPFJHZqKf38WfHyQ?e=hcQaJg'},
+        ],
+    },
+
     { imageSrc: laptopThumbnail, title: 'Laptop price predictor', summary: 'Predicting a laptop\'s price given its specifications' , ytLink:'', 
     description: "Developed an end-to-end project for predicting a laptop\'s price given its specifications using several ML models with a R2 measure of 82% and performed EDA on the available data.Role involved scraping and cleaning (pre-processed) dataset collected from the Flipkart laptop catalog (raw data: 943 entries with 96 features)",
     images: ["",],
@@ -88,14 +97,6 @@ export const projectItems=[
         ],
     },
 
-    { imageSrc: parkThumbanil, title: 'Park', summary: 'Automatically save parking location when phone disconnects from Android Auto' , ytLink:'', 
-        description: "Automatically save parking space location when phone disconnects from Android Auto or Android Automative OS.Manually save parking location for users not using Android Auto.Parking space notes.Needs notification and precise location permissions.App does not require internet access.Built in Kotlin using CarConnection api, location services and Room database",
-        images: ["",],
-        githubLink:"https://github.com/BDhanush/Park/",
-        otherLinks:[
-            {title:'apk link',link:'https://1drv.ms/f/s!AmvH0VCG4AMoh6RPFJHZqKf38WfHyQ?e=hcQaJg'},
-        ],
-    },
 
 
     
