@@ -95,7 +95,7 @@ export const projectItems=[
         otherLinks:[
             {title:'apk link',link:'https://1drv.ms/f/s!AmvH0VCG4AMoh6RPFJHZqKf38WfHyQ?e=hcQaJg'},
         ],
-        },
+    },
 
 
     
