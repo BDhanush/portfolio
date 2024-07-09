@@ -6,7 +6,7 @@ import battleshipThumbnail from '../assets/projects/Battleship/thumbnail.png'
 import codeforcesThumbnail from '../assets/projects/CodeforcesFriends/thumbnail.png'
 import streaksThumbnail from '../assets/projects/Streaks/thumbnail.png'
 import easyShareThumbnail from '../assets/projects/EasyShare/thumbnail.jpg'
-
+import parkThumbanil from '../assets/projects/Park/thumbnail.png'
 
 
 
@@ -85,6 +85,15 @@ export const projectItems=[
         githubLink:"https://github.com/BDhanush/Easy-Share/",
         otherLinks:[
             {title:'apk link',link:'https://1drv.ms/f/s!AmvH0VCG4AMoh6QgCfANqM-bwjt1jA?e=O9LsJB'}, 
+        ],
+    },
+
+    { imageSrc: parkThumbanil, title: 'Park', summary: 'Automatically save parking location when phone disconnects from Android Auto' , ytLink:'', 
+        description: "Automatically save parking space location when phone disconnects from Android Auto or Android Automative OS.Manually save parking location for users not using Android Auto.Parking space notes.Needs notification and precise location permissions.App does not require internet access.Built in Kotlin using CarConnection api, location services and Room database",
+        images: ["",],
+        githubLink:"https://github.com/BDhanush/Park/",
+        otherLinks:[
+            {title:'apk link',link:'https://1drv.ms/f/s!AmvH0VCG4AMoh6RPFJHZqKf38WfHyQ?e=hcQaJg'},
         ],
         },
 
