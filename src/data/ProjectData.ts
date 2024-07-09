@@ -5,6 +5,7 @@ import laptopThumbnail from '../assets/projects/Laptop/thumbnail.png'
 import battleshipThumbnail from '../assets/projects/Battleship/thumbnail.png'
 import codeforcesThumbnail from '../assets/projects/CodeforcesFriends/thumbnail.png'
 import streaksThumbnail from '../assets/projects/Streaks/thumbnail.png'
+import easyShareThumbnail from '../assets/projects/EasyShare/thumbnail.jpg'
 
 
 
@@ -78,6 +79,14 @@ export const projectItems=[
         {title:'apk link',link:'https://1drv.ms/f/s!AmvH0VCG4AMoh6NSjlAvMLH7H0SwRQ?e=twmcXT'}, 
     ],
     },
+    { imageSrc: easyShareThumbnail, title: 'Easy Share', summary: 'Share links quickly using NFC or QRcode' , ytLink:'https://www.youtube.com/embed/hrgVMZHlzCE', 
+        description: "Use NFC or QR codes to share saved links.Built in Kotlin along with Room database to store links.Uses Host Card Emulation for NFC and a QR code generator",
+        images: ["",],
+        githubLink:"https://github.com/BDhanush/Easy-Share/",
+        otherLinks:[
+            {title:'apk link',link:'https://1drv.ms/f/s!AmvH0VCG4AMoh6QgCfANqM-bwjt1jA?e=O9LsJB'}, 
+        ],
+        },
 
 
     

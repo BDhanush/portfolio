@@ -33,7 +33,9 @@
   }
   
   .github-button:hover {
-    background-color: #444c56;
+    background-color: black;
+    color: white;
+
   }
   
   .github-logo {

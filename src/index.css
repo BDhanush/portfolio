@@ -8,6 +8,7 @@ html {
 
 body {
   background: linear-gradient(-45deg, #364e44, #273038, #273832, #273831);
+  background-color: #273832;
   background-size: 1000% 1000%;
   animation: gradient 10s ease infinite;
   height: 100vh;
