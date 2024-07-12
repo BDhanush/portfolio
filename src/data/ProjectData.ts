@@ -21,7 +21,7 @@ export const projectItems=[
     images: ["",],
     githubLink:"https://github.com/BDhanush/ARShopping/",
     otherLinks:[
-        {title:'Project report',link:'https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbEdOaGxpcEsyOXNqMHRvcHNMVlJxWDYtV2xEZ3xBQ3Jtc0tsaTNwN0JtRThQR3dIQ2VFN3JZSmV3VDJ2VVYyVll0RUdjdVlnRkNNVkFPQ0FYWjFyeFpBbVphMk12a190aEMyamtkUTNFZWRmLWdkaHJZNVFsSUtFNEk1SU84SHhPZ3ltR21jNnh4Y1lhSHpxMF94WQ&q=https%3A%2F%2F1drv.ms%2Fw%2Fs%21AmvH0VCG4AMoh6Jvn2OXuBae7r8bGA%3Fe%3Dctc9fg&v=QlHkJT6Zp1g'}, 
+        {title:'Project report',link:'https://onedrive.live.com/view.aspx?resid=2803E08650D1C76B%21119151&authkey=!AJ9jl7gWnu6_Gxg'}, 
         {title:'apk link',link:'https://onedrive.live.com/?id=2803E08650D1C76B%21119190&resid=2803E08650D1C76B%21119190&ithint=folder&authkey=%21AARvrBeZMvrSSNE&cid=2803e08650d1c76b'}, 
 
     ],
