@@ -21,7 +21,7 @@ export const projectItems=[
     images: ["",],
     githubLink:"https://github.com/BDhanush/ARShopping/",
     otherLinks:[
-        {title:'Project report',link:'https://onedrive.live.com/view.aspx?resid=2803E08650D1C76B%21119151&authkey=!AJ9jl7gWnu6_Gxg'}, 
+        {title:'Project report',link:'https://1drv.ms/w/s!AmvH0VCG4AMoh6Jvn2OXuBae7r8bGA?e=ctc9fg'}, 
         {title:'apk link',link:'https://onedrive.live.com/?id=2803E08650D1C76B%21119190&resid=2803E08650D1C76B%21119190&ithint=folder&authkey=%21AARvrBeZMvrSSNE&cid=2803e08650d1c76b'}, 
 
     ],
