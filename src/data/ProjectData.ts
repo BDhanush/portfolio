@@ -98,7 +98,7 @@ export const projectItems=[
         ],
     },
     { imageSrc: plagiarismThumbanil, title: 'Plagiarism Checker', summary: 'Plagiarism checking using edit distance and tri-grams' , ytLink:'', 
-        description: "Plagiarism checking using edit distance and tri-grams",
+        description: "Plagiarism checking using edit distance and tri-grams.a 1 vs all approach for checking plagiarism",
         images: ["",],
         githubLink:"https://github.com/BDhanush/Plagiarism-Checker/",
         otherLinks:[
