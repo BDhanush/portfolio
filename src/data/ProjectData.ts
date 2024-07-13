@@ -7,6 +7,7 @@ import codeforcesThumbnail from '../assets/projects/CodeforcesFriends/thumbnail.
 import streaksThumbnail from '../assets/projects/Streaks/thumbnail.png'
 import easyShareThumbnail from '../assets/projects/EasyShare/thumbnail.jpg'
 import parkThumbanil from '../assets/projects/Park/thumbnail.png'
+import plagiarismThumbanil from '../assets/projects/PlagiarismChecker/thumbnail.png'
 
 
 
@@ -94,6 +95,14 @@ export const projectItems=[
         githubLink:"https://github.com/BDhanush/Easy-Share/",
         otherLinks:[
             {title:'apk link',link:'https://1drv.ms/f/s!AmvH0VCG4AMoh6QgCfANqM-bwjt1jA?e=O9LsJB'}, 
+        ],
+    },
+    { imageSrc: plagiarismThumbanil, title: 'Plagiarism Checker', summary: 'Plagiarism checking using edit distance and tri-grams' , ytLink:'', 
+        description: "Plagiarism checking using edit distance and tri-grams",
+        images: ["",],
+        githubLink:"https://github.com/BDhanush/Plagiarism-Checker/",
+        otherLinks:[
+            {title:'report',link:'https://1drv.ms/w/s!AmvH0VCG4AMo1h36MUQ-7uw1j_eT?e=7bousw'}, 
         ],
     },
 
