@@ -16,6 +16,11 @@ body {
   color: aliceblue;
 }
 
+@font-face {
+  font-family: 'Playwrite NL';
+  src: local('Playwrite NL'), url(./fonts/PlaywriteNL-VariableFont_wght.ttf) format('truetype');
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
