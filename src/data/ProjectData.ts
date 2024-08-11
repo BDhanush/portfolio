@@ -48,7 +48,7 @@ export const projectItems=[
     ],
     },
 
-    { imageSrc: parkThumbanil, title: 'Park', summary: 'Automatically save parking location when phone disconnects from Android Auto' , ytLink:'', 
+    { imageSrc: parkThumbanil, title: 'Park', summary: 'Automatically save parking location when phone disconnects from Android Auto' , ytLink:'https://www.youtube.com/embed/bN7eTYFC9PQ', 
         description: "Automatically save parking space location when phone disconnects from Android Auto or Android Automative OS.Manually save parking location for users not using Android Auto.Parking space notes.Needs notification and precise location permissions.App does not require internet access.Built in Kotlin using CarConnection api, location services and Room database",
         images: ["",],
         githubLink:"https://github.com/BDhanush/Park/",
