@@ -7,8 +7,8 @@ import codeforcesThumbnail from '../assets/projects/CodeforcesFriends/thumbnail.
 import streaksThumbnail from '../assets/projects/Streaks/thumbnail.png'
 import easyShareThumbnail from '../assets/projects/EasyShare/thumbnail.jpg'
 import parkThumbanil from '../assets/projects/Park/thumbnail.png'
-import plagiarismThumbanil from '../assets/projects/PlagiarismChecker/thumbnail.png'
-
+import plagiarismThumbnail from '../assets/projects/PlagiarismChecker/thumbnail.png'
+import polymorphicThumbnail from '../assets/projects/Polymorphic/thumbnail.png'
 
 
 export function getLink(title:string):string {
@@ -97,7 +97,13 @@ export const projectItems=[
             {title:'apk link',link:'https://1drv.ms/f/s!AmvH0VCG4AMoh6QgCfANqM-bwjt1jA?e=O9LsJB'}, 
         ],
     },
-    { imageSrc: plagiarismThumbanil, title: 'Plagiarism Checker', summary: 'Plagiarism checking using edit distance and tri-grams' , ytLink:'', 
+    { imageSrc: polymorphicThumbnail, title: 'Polymorphic Executable', summary: 'Executable to change binary of any other executable and itself repeatedly' , ytLink:'https://www.youtube.com/embed/ug2AwlJaTi8', 
+        description: "Executable capable of changing any other executable including itself, repeatedly.Parameters: <epoch, when to change back> <executable path>",
+        images: ["",],
+        githubLink:"https://github.com/BDhanush/Polymorphic-executable/",
+        
+    },
+    { imageSrc: plagiarismThumbnail, title: 'Plagiarism Checker', summary: 'Plagiarism checking using edit distance and tri-grams' , ytLink:'', 
         description: "Plagiarism checking using edit distance and tri-grams.A 1 vs all approach for checking plagiarism",
         images: ["",],
         githubLink:"https://github.com/BDhanush/Plagiarism-Checker/",
@@ -105,7 +111,6 @@ export const projectItems=[
             {title:'report',link:'https://1drv.ms/w/s!AmvH0VCG4AMo1h36MUQ-7uw1j_eT?e=7bousw'}, 
         ],
     },
-
 
 
     
