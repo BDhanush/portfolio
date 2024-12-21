@@ -9,6 +9,8 @@ import easyShareThumbnail from '../assets/projects/EasyShare/thumbnail.jpg'
 import parkThumbanil from '../assets/projects/Park/thumbnail.png'
 import plagiarismThumbnail from '../assets/projects/PlagiarismChecker/thumbnail.png'
 import polymorphicThumbnail from '../assets/projects/Polymorphic/thumbnail.png'
+import proProtectThumbnail from '../assets/projects/ProcProtect/thumbnail.png'
+import restaurantThumbnail from '../assets/projects/Restaurant/thumbnail.png'
 
 
 export function getLink(title:string):string {
@@ -66,12 +68,33 @@ export const projectItems=[
         {title:'Processed dataset',link:'https://www.kaggle.com/datasets/dhanushbommavaram/laptop-ranked-dataset'}, 
     ],
     },
-
+    { imageSrc: proProtectThumbnail, title: 'ProcProtect', summary: 'LLM powered Malware Detection using the /proc file system on linux' , ytLink:'', 
+        description: "A Program to parse the /proc file system and detect malware using an LLM.An llm model analyzes the parsed data using Ollama and flags any suspicious processes.Implemented in C++",
+        images: ["",],
+        githubLink:"https://github.com/BDhanush/ProcProtect",
+        otherLinks:[
+            {title:'report',link:'https://1drv.ms/w/s!AmvH0VCG4AMojdUEQPQODMyVWHYdLw?e=3GF5h5'}, 
+        ],
+    },
+    { imageSrc: restaurantThumbnail, title: 'Restaurant Management System', summary: 'Restaurant Management System with support for group ordering' , ytLink:'https://www.youtube.com/embed/NF5GjrU0yU8', 
+        description: "Restaurant Management System with support for group ordering.Typescript, React frontend with a Python, Flask backend.Uses a MySQL database. Uses Stripe for payment processing.Customers scan a QR code to view the menu and order items",
+        images: ["",],
+        githubLink:"https://github.com/BDhanush/Database-Project",
+        otherLinks:[
+            {title:'Requirements and ER-diagram',link:'https://docs.google.com/document/d/1oLWyhYwH385UaZRH21bErTq2O_x-Trv6vp0oQzHxTOQ/edit?usp=sharing'}, 
+        ],
+    },
     { imageSrc: battleshipThumbnail, title: 'Battleship bot', summary: 'Bot to play the game, Battleship using probability' , ytLink:'', 
     description: "Python and C++ programs to play and win the game, battleship using probability on an average of 48 moves.51% faster than using random strategy",
     images: ["",],
     githubLink:"https://github.com/BDhanush/Battleship-Bot",
     
+    },
+    { imageSrc: polymorphicThumbnail, title: 'Polymorphic Executable', summary: 'Executable to change binary of any other executable and itself repeatedly' , ytLink:'https://www.youtube.com/embed/ug2AwlJaTi8', 
+        description: "Executable capable of changing any other executable including itself, repeatedly.Parameters: <epoch, when to change back> <executable path>",
+        images: ["",],
+        githubLink:"https://github.com/BDhanush/Polymorphic-executable/",
+        
     },
 
     { imageSrc: codeforcesThumbnail, title: 'Codeforces add friends automation', summary: 'Web automation to automate task' , ytLink:'https://www.youtube.com/embed/tT6bHrPPE7E', 
@@ -96,12 +119,6 @@ export const projectItems=[
         otherLinks:[
             {title:'apk link',link:'https://1drv.ms/f/s!AmvH0VCG4AMoh6QgCfANqM-bwjt1jA?e=O9LsJB'}, 
         ],
-    },
-    { imageSrc: polymorphicThumbnail, title: 'Polymorphic Executable', summary: 'Executable to change binary of any other executable and itself repeatedly' , ytLink:'https://www.youtube.com/embed/ug2AwlJaTi8', 
-        description: "Executable capable of changing any other executable including itself, repeatedly.Parameters: <epoch, when to change back> <executable path>",
-        images: ["",],
-        githubLink:"https://github.com/BDhanush/Polymorphic-executable/",
-        
     },
     { imageSrc: plagiarismThumbnail, title: 'Plagiarism Checker', summary: 'Plagiarism checking using edit distance and tri-grams' , ytLink:'', 
         description: "Plagiarism checking using edit distance and tri-grams.A 1 vs all approach for checking plagiarism",
