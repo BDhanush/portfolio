@@ -1,7 +1,7 @@
 
 // last sentence in description should not end with a '.'
 export const experienceItems = [
-    { time: 'May 2025 - Aug 2025', company: 'CrowdStrike',  role: 'Software Engineering Intern', 
+    { time: 'May 2025 - present', company: 'CrowdStrike',  role: 'Software Engineering Intern', 
     description: 'Built a job executor cost tracking Grafana dashboard by merging spark metrics from Prometheus and data from a PostgreSQL database for real-time usage/cost metrics attributed by user/team.Contributed to a service written in Go to add user/team query cost tracking capability.Designed required PostgreSQL database tables',
     link:'https://drive.google.com/file/d/1L4CLNbHAP9nOYSfsjPMR1TbnJ2EKD0w8/view?usp=sharing'},
     { time: 'Feb 2024 - Apr 2024', company: 'Risksek',  role: 'Python Backend Intern', 
