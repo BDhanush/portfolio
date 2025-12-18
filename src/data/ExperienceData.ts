@@ -1,8 +1,11 @@
 
 // last sentence in description should not end with a '.'
 export const experienceItems = [
-    { time: 'May 2025 - present', company: 'CrowdStrike',  role: 'Software Engineering Intern', 
-    description: 'Built a job executor cost tracking Grafana dashboard by merging spark metrics from Prometheus and data from a PostgreSQL database for real-time usage/cost metrics attributed by user/team.Contributed to a service written in Go to add user/team query cost tracking capability.Designed required PostgreSQL database tables',
+    { time: 'Aug 2025 - Dec 2025', company: 'CrowdStrike',  role: 'Software Engineering Intern', 
+    description: 'Programmed a Python tool/script to migrate specified Apache Pinot tables from one cluster to another and have them ready to query',
+    link:'https://drive.google.com/file/d/1jJIUoQh6Lcs-mMwD8aP8fDkA-cJ8oYXn/view?usp=sharing'},
+    { time: 'May 2025 - Aug 2025', company: 'CrowdStrike',  role: 'Software Engineering Intern', 
+    description: 'Engineered cost tracking functionality for Spark jobs in a Go based service, processing 2000-3000 queries a day across teams.Designed schema for PostgreSQL database. Created a Grafana dashboard by merging PostgreSQL data with Spark metrics from Prometheus for real-time usage/cost metrics attributed by user/team',
     link:'https://drive.google.com/file/d/1L4CLNbHAP9nOYSfsjPMR1TbnJ2EKD0w8/view?usp=sharing'},
     { time: 'Feb 2024 - Apr 2024', company: 'Risksek',  role: 'Python Backend Intern', 
     description: 'Implemented a parser in python to convert logical statements into mongodb queries.Built a Django application with threads to fetch all public repositories from github, gitlab and bitbucket using their api and store them in a mongodb database to scan them for secrets and analysis.Expanded the functionality of code scanner agent by implementing additional secrets scanning.Built a Django application with threads to store, update and process information about ruby libraries on a periodic basis using rubygems api to add support for library vulnerabilities scanning in an additional language (ruby)',
