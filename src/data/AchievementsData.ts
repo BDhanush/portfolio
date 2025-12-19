@@ -5,10 +5,10 @@ import Image_ICPC_Amritapuri from '../assets/achievements/ICPC_Amritapuri.jpg'
 import Image_ICPC_Amritapuri_banner from '../assets/achievements/ICPC_Amritapuri_banner.jpg'
 
 import Image_ICPC_Kanpur from '../assets/achievements/ICPC_Kanpur.jpg'
-import Image_ICPC_Kanpur_badge from '../assets/achievements/ICPC_Kanpur_badge.jpg'
+// import Image_ICPC_Kanpur_badge from '../assets/achievements/ICPC_Kanpur_badge.jpg'
 
 import Image_Dell_office from '../assets/achievements/Dell_office.jpg'
-import Image_Dell_badge from '../assets/achievements/Dell_badge.jpg'
+// import Image_Dell_badge from '../assets/achievements/Dell_badge.jpg'
 
 export const achievementItems = [
     { text:"ICPC (International Collegiate Programming Contest) Amritapuri regional 2021/2022" , link:'https://drive.google.com/drive/folders/1jEOGZJ8qpraxUoSA-1zYoY82pciriucU?usp=sharing'},
