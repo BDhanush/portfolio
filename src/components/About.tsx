@@ -1,5 +1,5 @@
 import './About.css'
-import ProfilePicture from "../assets/ProfilePicture.jpg";
+import ProfilePicture from "../assets/images/ProfilePicture.jpg";
 import Skills from './Skills';
 import Socials from './Socials';
 import {authorName,introHeader,introText} from '../data/AboutData'

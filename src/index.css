@@ -18,7 +18,7 @@ body {
 
 @font-face {
   font-family: 'Playwrite NL';
-  src: local('Playwrite NL'), url(./fonts/PlaywriteNL-VariableFont_wght.ttf) format('truetype');
+  src: local('Playwrite NL'), url(./assets/fonts/PlaywriteNL-VariableFont_wght.ttf) format('truetype');
 }
 
 @keyframes gradient {
