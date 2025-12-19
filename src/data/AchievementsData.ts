@@ -1,9 +1,14 @@
-import Image1 from '../assets/achievements/Image (1).jpg'
-import Image2 from '../assets/achievements/Image (2).jpg'
-import Image3 from '../assets/achievements/Image (3).jpg'
-import Image4 from '../assets/achievements/Image (4).jpg'
-import Image5 from '../assets/achievements/Image (5).jpg'
-import Image6 from '../assets/achievements/Image (6).jpg'
+import Image_CRWD from '../assets/achievements/CRWD.jpg'
+import Image_CRWD_tshirt from '../assets/achievements/CRWD_tshirt.jpg'
+
+import Image_ICPC_Amritapuri from '../assets/achievements/ICPC_Amritapuri.jpg'
+import Image_ICPC_Amritapuri_banner from '../assets/achievements/ICPC_Amritapuri_banner.jpg'
+
+import Image_ICPC_Kanpur from '../assets/achievements/ICPC_Kanpur.jpg'
+import Image_ICPC_Kanpur_badge from '../assets/achievements/ICPC_Kanpur_badge.jpg'
+
+import Image_Dell_office from '../assets/achievements/Dell_office.jpg'
+import Image_Dell_badge from '../assets/achievements/Dell_badge.jpg'
 
 export const achievementItems = [
     { text:"ICPC (International Collegiate Programming Contest) Amritapuri regional 2021/2022" , link:'https://drive.google.com/drive/folders/1jEOGZJ8qpraxUoSA-1zYoY82pciriucU?usp=sharing'},
@@ -16,10 +21,12 @@ export const achievementItems = [
 ]
 
 export const images:string[] = [
-    Image5,
-    Image2,
-    Image1,
-    Image3,
-    Image6,
-    Image4,
- ] 
+    Image_CRWD,
+    Image_ICPC_Amritapuri,
+    Image_ICPC_Kanpur,
+    // Image_Dell_badge,
+    Image_Dell_office,
+    Image_CRWD_tshirt,
+    Image_ICPC_Amritapuri_banner,
+    // Image_ICPC_Kanpur_badge,
+] 
