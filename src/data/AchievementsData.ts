@@ -15,7 +15,7 @@ export const achievementItems = [
     { text:"ICPC Mathura-Kanpur regional 2022/2023" , link:'https://drive.google.com/drive/folders/1jEOGZJ8qpraxUoSA-1zYoY82pciriucU?usp=sharing'},
     { text:"ICPC Amritapuri regional 2023/2024" , link:'https://drive.google.com/drive/folders/1jEOGZJ8qpraxUoSA-1zYoY82pciriucU?usp=sharing'},
     { text:"Received merit scholarship from Mahindra University for ranking in the top 10 among 213 students pursuing computer science for the academic years 2020/21, 2021/22, 2022/23." },
-    { text:"Placed 1st in all contests conducted by competitive programming club of Mahindra University from Aug 2022 - Feb 2023"},
+    { text:"Placed 1st in all contests conducted by competitive programming club of Mahindra University from Aug 2022 - Feb 2023."},
     { text:"Placed 1st in pair programming contest organized by the competitive programming club of Mahindra University in collaboration with CodeChef.",link:"https://www.codechef.com/rankings/TECHMANIA_B3?itemsPerPage=100&order=asc&page=1&sortBy=rank"},
 
 ]
