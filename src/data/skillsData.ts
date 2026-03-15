@@ -1,5 +1,7 @@
 export const skillsItems= [
-    'C++','C', 'Kotlin', 'Python', 'Java', 'Go',
-    'Android Development', 'Git', 'Rest API', 'SQL',  'MySQL', 'Firebase', 'MongoDB', 'Web Automation', 'Web Scraping', 'TypeScript', 'React', 'Angular', 'Django',
+    'C++','C', 'Go', 'Rust', 'Python', 'Kotlin', 'Java',
+    'Linux', 'Android Development', 'Git', 'Rest API', 'SQL',  'MySQL',
+    'Web Automation', 'Web Scraping', 
+    'MongoDB', 'Firebase', 'Spring Boot', 'TypeScript', 'React', 'Angular', 'Django',
     // 'Django', 'Spring Boot', 'Angular', 'React'
 ]
