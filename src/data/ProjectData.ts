@@ -35,9 +35,9 @@ export const projectItems=[
         description: "Prototype for a private file system shared across personal devices of a single user. Support for read/write operations on files. Daemons use iroh QUIC connections for peer to peer communications (p2p network) and TCP connections for client-application communication",
         images: ["",],
         githubLink:"https://github.com/BDhanush/vpfs-iroh",
-        // otherLinks:[
-        //     {title:'report',link:''}, 
-        // ],
+        otherLinks:[
+            {title:"report",link:"https://drive.google.com/file/d/1wN70cpWpqttWOQYEAuMF7W7zimM4SCn6/view?usp=sharing"}, 
+        ],
     },
     
     { 
