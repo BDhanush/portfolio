@@ -1,5 +1,25 @@
 #skills {
-  }
+}
+
+.skills-section {
+  margin-bottom: 16px;
+}
+
+.skills-category {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 0;
+  color: #65b5ff;
+}
+
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
 
   .chip {
     display: inline-block;
