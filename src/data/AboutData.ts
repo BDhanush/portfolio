@@ -1,7 +1,7 @@
 export const authorName = "Dhanush Bommavaram"
 
 export const introHeader = 
-"A Master of Science in Computer Science student at University of Illinois, Chicago"
+"A Master of Science in Computer Science graduate at University of Illinois, Chicago"
 
 export const introText = 
 "Looking for software engineering opportunities. Areas of interest include systems, backend and Android Development."
