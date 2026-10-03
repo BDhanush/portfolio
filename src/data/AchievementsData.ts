@@ -1,13 +1,13 @@
-import Image_CRWD from '../assets/images/achievements/CRWD.jpg'
-import Image_CRWD_tshirt from '../assets/images/achievements/CRWD_tshirt.jpg'
+import Image_CRWD from '../assets/images/achievements/CRWD.webp'
+import Image_CRWD_tshirt from '../assets/images/achievements/CRWD_tshirt.webp'
 
-import Image_ICPC_Amritapuri from '../assets/images/achievements/ICPC_Amritapuri.jpg'
-import Image_ICPC_Amritapuri_banner from '../assets/images/achievements/ICPC_Amritapuri_banner.jpg'
+import Image_ICPC_Amritapuri from '../assets/images/achievements/ICPC_Amritapuri.webp'
+import Image_ICPC_Amritapuri_banner from '../assets/images/achievements/ICPC_Amritapuri_banner.webp'
 
-import Image_ICPC_Kanpur from '../assets/images/achievements/ICPC_Kanpur.jpg'
+import Image_ICPC_Kanpur from '../assets/images/achievements/ICPC_Kanpur.webp'
 // import Image_ICPC_Kanpur_badge from '../assets/images/achievements/ICPC_Kanpur_badge.jpg'
 
-import Image_Dell_office from '../assets/images/achievements/Dell_office.jpg'
+import Image_Dell_office from '../assets/images/achievements/Dell_office.webp'
 // import Image_Dell_badge from '../assets/images/achievements/Dell_badge.jpg'
 
 export const achievementItems = [
