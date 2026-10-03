@@ -1,43 +1,31 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import './ProjectPage.css'; // For styling
-import { useWindowSize } from '../useWindowSize';
 import { FaGithub } from 'react-icons/fa';
+import { projectItems, getLink } from '../data/ProjectData';
+import NotFound from './NotFound';
 
-interface OtherLinks{
-  title:string;
-  link:string;
-}
+const ProjectPage: React.FC = () => {
+  const { slug } = useParams();
+  const project = projectItems.find(item => getLink(item.title) === slug);
 
-interface Props {
-  ytLink: string;
-  title: string;
-  description: string;
-  images: string[];
-  githubLink:string;
-  otherLinks:OtherLinks[] | undefined;
-}
+  if (!project) return <NotFound />;
 
-const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, githubLink, otherLinks }) => {
-
+  const { ytLink, title, description, githubLink } = project;
+  const otherLinks = 'otherLinks' in project ? project.otherLinks : undefined;
   const descriptionList = description.split('.').map((item) =>
     item+='.'
   )
-  images
 
-  const { width } = useWindowSize();
   return (
     <div id='projectPage'>
     <h2>{title}</h2>
-    {ytLink && 
-      <div style={{
-        maxWidth: 'fit-content',
-        marginLeft: 'auto',
-        marginRight: 'auto'}}>
+    {ytLink &&
+      <div className="video-wrapper">
         <iframe
-          width={Math.min(0.8*width,560)}
-          height={Math.min(0.8*width,560) * 9.0/16}
           src={ytLink}
           title="YouTube video player"
+          loading="lazy"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -45,7 +33,7 @@ const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, gith
       </div>}
       <div className="list-container">
         <ul>
-            {descriptionList.map((item,index) => 
+            {descriptionList.map((item,index) =>
             <li key={index}>{item}</li>
           )}
         </ul>
@@ -60,8 +48,8 @@ const ProjectPage: React.FC<Props> = ({ ytLink, title, description, images, gith
         <div>
         <h3>Other Links</h3>
         {otherLinks.map((item,index) =>
-        <div style={{padding:'10px 0px'}}>
-        <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>
+        <div style={{padding:'10px 0px'}} key={index}>
+        <a href={item.link} target="_blank" rel="noopener noreferrer">
         {item.title}
         </a>
         </div>
