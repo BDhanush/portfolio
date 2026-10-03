@@ -1,5 +1,5 @@
 import './About.css'
-import ProfilePicture from "../assets/images/ProfilePicture.jpg";
+import ProfilePicture from "../assets/images/ProfilePicture.webp";
 import Skills from './Skills';
 import Socials from './Socials';
 import {authorName,introHeader,introText} from '../data/AboutData'
@@ -16,7 +16,7 @@ function About() {
             <p>{introText}</p>
           </div>
           <div className="image-socials-wrapper">
-            <img src={ProfilePicture} className="profile-image" />
+            <img src={ProfilePicture} className="profile-image" alt={authorName} width={250} height={250} fetchPriority="high" />
             <Socials/>
           </div>
         </div>

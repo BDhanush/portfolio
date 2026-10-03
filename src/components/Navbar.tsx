@@ -1,45 +1,51 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
+const navItems = ['About', 'Experience', 'Achievements', 'Projects'];
+
 const NavBar: React.FC = () => {
   const [activeItem, setActiveItem] = useState<number | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    const navItems = document.querySelectorAll('.nav-item');
-
-    let currentActive = 0;
-
-    navItems.forEach((item, index) => {
-      const sectionId = item.getAttribute('href')?.substring(1);
-      const section = document.getElementById(sectionId || '');
-
-      if (section) {
-        const sectionTop = section.offsetTop - 1;
-        const sectionHeight = section.offsetHeight;
-
-        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-          currentActive = index;
-        }
-      }
-    });
-
-    setActiveItem(currentActive);
-  };
-
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
+    const sections = navItems.map(item => document.getElementById(item.toLowerCase()));
+    let frame = 0;
+
+    const update = () => {
+      frame = 0;
+      const scrollY = window.scrollY;
+      let currentActive = 0;
+
+      sections.forEach((section, index) => {
+        if (section) {
+          const sectionTop = section.offsetTop - 1;
+          const sectionHeight = section.offsetHeight;
+
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            currentActive = index;
+          }
+        }
+      });
+
+      // React skips the re-render when the value is unchanged
+      setActiveItem(currentActive);
+    };
+
+    // Throttle to one update per frame
+    const handleScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
+      cancelAnimationFrame(frame);
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const navItems = ['About', 'Experience', 'Achievements', 'Projects'];
-
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(open => !open);
   };
 
   return (

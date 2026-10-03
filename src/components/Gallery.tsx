@@ -24,7 +24,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
     >
       {images.map((image, index) => (
         <div key={index} className="gallery-item">
-          <img src={image} />
+          <img src={image} alt="" loading="lazy" decoding="async" />
         </div>
       ))}
     </Masonry>

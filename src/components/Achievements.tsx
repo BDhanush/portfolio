@@ -9,7 +9,7 @@ function Achievements () {
       <h2>Achievements</h2>
       <ul style={{paddingBottom:"20px"}}>
       {achievementItems.map((item,index) => 
-        item.link? <a href={item.link} target="_blank" rel="noopener noreferrer"><li key={index}>{item.text}</li></a> : <li key={index}>{item.text}</li>
+        item.link? <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}><li>{item.text}</li></a> : <li key={index}>{item.text}</li>
       )}
       </ul>
       <Gallery images={images} />
