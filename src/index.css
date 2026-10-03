@@ -7,29 +7,48 @@ html {
 }
 
 body {
-  background: linear-gradient(-45deg, #364e44, #273038, #273832, #273831);
   background-color: #273831;
-  background-size: 1000% 1000%;
-  animation: gradient 10s ease infinite;
   height: 100vh;
-  background-attachment: fixed;
   color: aliceblue;
+}
+
+/* Animated gradient on its own fixed, GPU-composited layer: moving it with
+   transform avoids repainting the whole viewport every frame */
+body::before {
+  content: '';
+  position: fixed;
+  inset: -100%;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(-45deg, #364e44, #273038, #273832, #273831);
+  animation: gradient 10s ease infinite;
+  will-change: transform;
 }
 
 @font-face {
   font-family: 'Playwrite NL';
-  src: local('Playwrite NL'), url(./assets/fonts/PlaywriteNL-VariableFont_wght.ttf) format('truetype');
+  src: local('Playwrite NL'), url(/fonts/PlaywriteNL-VariableFont_wght.woff2) format('woff2');
+  font-display: swap;
 }
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    transform: translateX(33.333%);
   }
   50% {
-    background-position: 100% 50%;
+    transform: translateX(-33.333%);
   }
   100% {
-    background-position: 0% 50%;
+    transform: translateX(33.333%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  body::before {
+    animation: none;
   }
 }
 
@@ -69,8 +88,10 @@ ul{
 
 @media (max-width:768px) {
   body {
-    background: none;
     background-color: #273038;
+  }
+  body::before {
+    display: none;
   }
   
 }
