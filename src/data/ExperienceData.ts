@@ -1,7 +1,7 @@
 
 // last sentence in description should not end with a '.'
 export const experienceItems = [
-    { time: 'Aug 2026 - present', company: 'Amazon',  role: 'Software Development Engineer', },
+    { time: 'Aug 2026 - Present', company: 'Amazon',  role: 'Software Development Engineer', },
     { time: 'Aug 2025 - Dec 2025', company: 'CrowdStrike',  role: 'Software Engineering Intern', 
     description: 'Programmed a Python tool/script to migrate specified Apache Pinot tables from one cluster to another and have them ready to query',
     link:'https://drive.google.com/file/d/1jJIUoQh6Lcs-mMwD8aP8fDkA-cJ8oYXn/view?usp=sharing'},
