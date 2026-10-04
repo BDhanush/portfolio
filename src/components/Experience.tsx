@@ -28,11 +28,13 @@ export default function Experience() {
                   {item.role}
                 </h4>
               </a>
-              <ul>
-                {item.description.split('.').map((sentence, i) =>
-                  <li key={i}>{sentence + '.'}</li>
-                )}
-              </ul>
+              {item.description && (
+                <ul>
+                  {item.description.split('.').map((sentence, i) =>
+                    <li key={i}>{sentence + '.'}</li>
+                  )}
+                </ul>
+              )}
             </div>
           </li>
         ))}
